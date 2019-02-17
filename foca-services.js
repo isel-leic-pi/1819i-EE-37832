@@ -139,11 +139,9 @@ class Foca {
 	 * * Possibilidade de criar uma cópia de um grupo existente, incluindo todas as equipas que fazem parte desse grupo.
 	 */
 	 copyGroup(user_id, groupID){
-		return this.focadb.getGroupById(user_id, groupId)
+		return this.focadb.getGroupById(user_id, groupID)
 					.then(group => {
-						console.log('Copiou')
-						console.log(group)
-						return this.focadb.createGroup( user_id, group.name, group.description, group.teams) 
+						return this.focadb.CreateGroup(user_id, group.name, group.description, group.teams) 
 					})
 		
 

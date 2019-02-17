@@ -111,7 +111,6 @@ module.exports = (app) => {
 		foca
 			.copyGroup(req.user._id,id)
 			.then((body) => { 
-				console.log('asdoad -> '+body)
 				resp.statusCode = 200
 				resp.end(JSON.stringify(body))})
 			.catch(next)
