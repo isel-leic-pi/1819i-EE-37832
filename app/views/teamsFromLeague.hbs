@@ -1,0 +1,18 @@
+<table class="table"> <!--teamsFromLeague.hbs-->
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Founded</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each teams}}
+            <tr>
+				<td>{{id}}</td>
+                <td>{{name}}</td>
+                <td>{{founded}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

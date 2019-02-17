@@ -1,0 +1,2 @@
+node foca-server
+pause

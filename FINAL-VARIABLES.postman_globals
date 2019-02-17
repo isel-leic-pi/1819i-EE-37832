@@ -1,0 +1,95 @@
+{
+	"id": "38636816-c888-4911-8a3c-2fae59ef707b",
+	"values": [
+		{
+			"key": "groupId",
+			"value": "pFZmDGgBPKAfKfY85p_2",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "teamId",
+			"value": "758",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "competitionId",
+			"value": "2001",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "groupName",
+			"value": "bestTeams",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "groupDescription",
+			"value": "bestDescription",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "newGroupName",
+			"value": "newName",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "newGroupDescription",
+			"value": "newDescription",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "dateFrom",
+			"value": "17-10-2000",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "dateTo",
+			"value": "17-10-2010",
+			"description": {
+				"content": "",
+				"type": "text/plain"
+			},
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "x4lgmGcBOU3gp9qDjUGl",
+			"enabled": true
+		}
+	],
+	"name": "Team Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2019-01-02T16:54:24.341Z",
+	"_postman_exported_using": "Postman/6.6.1"
+}

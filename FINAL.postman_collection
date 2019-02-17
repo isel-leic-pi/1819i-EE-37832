@@ -1,0 +1,821 @@
+{
+	"info": {
+		"_postman_id": "16f5f4aa-4166-4320-a0f9-5e832187d090",
+		"name": "FOCA_SERVICES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reset Foca",
+			"item": [
+				{
+					"name": "DELETE FOCA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9200/foca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"foca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD FOCA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9200/foca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"foca"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "SignUp",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "fullname",
+											"value": "teste 1",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "teste 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/foca/auth/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"foca",
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:3000/foca/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"foca",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "teste 1",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/foca/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"foca",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:9200/users/_search",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"users",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fullname",
+									"value": "teste 1",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "teste 1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/foca/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"foca",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/foca/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"foca",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "teste 1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/foca/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"foca",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:9200/users/_search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"users",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Competitions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e6427d90-8c55-41a2-882b-952c01712bb2",
+						"exec": [
+							"pm.test(\"Test competition amount\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.count).to.eql(147);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test values of competition with id 2006\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.competitions[0].id).to.eql(2006);\r",
+							"    pm.expect(jsonData.competitions[0].name).to.eql(\"Africa\");\r",
+							"    pm.expect(jsonData.competitions[0].description).to.eql(\"WC Qualification\");\r",
+							"});\r",
+							"pm.test(\"Test expecting competitions ids : 2006,2025, 2023,\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var idList = [];\r",
+							"    jsonData.competitions.forEach(c => {\r",
+							"        idList.push(c.id);\r",
+							"    });\r",
+							"    pm.expect(idList[0]).to.eql(2006);\r",
+							"    pm.expect(idList[1]).to.eql(2025);\r",
+							"    pm.expect(idList[2]).to.eql(2023);\r",
+							"    \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/competitions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"competitions"
+					]
+				},
+				"description": "returns all the competitions "
+			},
+			"response": []
+		},
+		{
+			"name": "Teams from League",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e4124f3e-edf0-468f-8d24-2fd5496443b4",
+						"exec": [
+							"pm.test(\"This competetions should have 79 teams\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.count).to.eql(79);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The first team should be TSG 1899 Hoffenheim with id 2 and the last should be FC Spartak Trnava with id 7288\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    let teams = jsonData.teams;\r",
+							"    pm.expect(teams[0].id).to.eql(2);\r",
+							"    pm.expect(teams[0].name).to.eql(\"TSG 1899 Hoffenheim\");\r",
+							"    pm.expect(teams[78].id).to.eql(7288);\r",
+							"    pm.expect(teams[78].name).to.eql(\"FC Spartak Trnava\"); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/competitions/{{competitionId}}/teams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"competitions",
+						"{{competitionId}}",
+						"teams"
+					]
+				},
+				"description": "returns all the teams from the specified league"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar grupo com nome e descrição",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2b07f2f5-5076-4a3f-b95a-c5e148b09b34",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setGlobalVariable(\"groupId\", jsonData.id); // afeta a variável de id do grupo para usar nas instrucoes seguintes",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"}); "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/foca/groups?name={{groupName}}&description={{groupDescription}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"foca",
+						"groups"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{groupName}}"
+						},
+						{
+							"key": "description",
+							"value": "{{groupDescription}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Group by Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ac9b12cc-2edf-48ec-961a-44cf24594ad6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/foca/groups/{{groupId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"foca",
+						"groups",
+						"{{groupId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar uma equipa a um grupo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f4bc97df-56b7-48cc-86e2-d4640899710f",
+						"exec": [
+							"pm.test(\"Test obtaining the groups array\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.a.property(\"id\");",
+							"    ",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/foca/groups/{{groupId}}/competition/{{competitionId}}/team/{{teamId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"foca",
+						"groups",
+						"{{groupId}}",
+						"competition",
+						"{{competitionId}}",
+						"team",
+						"{{teamId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "group list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "007056e4-ddfa-4431-918b-90a089472634",
+						"exec": [
+							"pm.test(\"Test obtaining the groups array\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.a.property(\"groups\");\r",
+							"    \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test groups if it is an array\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"     pm.expect(jsonData.groups).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/foca/groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"foca",
+						"groups"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar grupo alterando nome e descrição",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c5c14ab6-c1c4-4029-bf32-6da63e6404bf",
+						"exec": [
+							"pm.test(\"Test obtaining the groups array\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.a.property(\"id\");",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/foca/groups/{{groupId}}?name={{newGroupName}}&description={{newGroupDescription}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"foca",
+						"groups",
+						"{{groupId}}"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{newGroupName}}"
+						},
+						{
+							"key": "description",
+							"value": "{{newGroupDescription}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter jogos das equipas favoritas entre duas datas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3eb0947e-3cbf-4e65-97cb-35b9e6541fc6",
+						"exec": [
+							" \r",
+							"pm.test(\"expect to have game between GNK and Hapoel\", function () {\r",
+							"    let jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].id).to.eql(247756);\r",
+							"    pm.expect(jsonData[0].competition).to.eql(\"UEFA Champions League\");\r",
+							"    pm.expect(jsonData[0].homeTeam).to.eql(\"GNK Dinamo Zagreb\");\r",
+							"    pm.expect(jsonData[0].awayTeam).to.eql(\"Hapoel Be\\'er Sheva FC\"); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/foca/groups/{{groupId}}/matches?dateFrom={{dateFrom}}&dateTo={{dateTo}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"foca",
+						"groups",
+						"{{groupId}}",
+						"matches"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "{{dateFrom}}"
+						},
+						{
+							"key": "dateTo",
+							"value": "{{dateTo}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover uma equipa de um grupo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e021316c-b543-4806-acee-cd6270f94873",
+						"exec": [
+							"pm.test(\"Test obtaining the groups array\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.a.property(\"id\");",
+							"    ",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/foca/groups/{{groupId}}/team/{{teamId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"foca",
+						"groups",
+						"{{groupId}}",
+						"team",
+						"{{teamId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
