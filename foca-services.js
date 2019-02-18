@@ -141,7 +141,7 @@ class Foca {
 	 copyGroup(user_id, groupID){
 		return this.focadb.getGroupById(user_id, groupID)
 					.then(group => {
-						return this.focadb.CreateGroup(user_id, group.name, group.description, group.teams) 
+						return this.focadb.CreateGroup(user_id, group.name + '(copia)', group.description, group.teams) 
 					})
 		
 

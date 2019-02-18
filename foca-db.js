@@ -14,15 +14,18 @@ class FocaDB {
         return new FocaDB(es)
     }
 	
-    CreateGroup(user_id, name, description, teams) //this new parameter is used for a group copy
+    CreateGroup(user_id, name, description, teams) //teams:this new parameter is used for a group copy
     {
-        let groupTeam = (teams!=undefined)? goupTeams = teams : []
+
+        let groupTeam = (teams!=undefined)?  teams : []
+
 		const options = {
             'method': 'POST',
             'uri': `${this.groupsUrl}`,
             'json': true,
             'body': {'user_id': user_id,'name': name, 'description':description, 'teams': groupTeam}
         }
+
        return rp(options)
         .then(
             body => {

@@ -98,7 +98,7 @@ module.exports =  async (divMain) => {
 		}
 	}
 
-	/**
+	/**(3)
 	 * Possibilidade de criar uma cópia de um grupo existente, incluindo todas as equipas que fazem parte desse grupo.
 	 */
 	function copyGroupHandler(ev){
@@ -108,18 +108,16 @@ module.exports =  async (divMain) => {
 			util.showAlert('Insira o id do grupo que quer copiar')
 		}
 		else{
-			fetch(`http://localhost:3000/foca/copy/groups/${groupId}`)
+			fetch(`http://localhost:3000/foca/groups/${groupId}/copy`, {method: 'POST'})
 			.then(res =>{
 				res.json()
 			} )
 			.then(obj => {
-				alert(obj)
-				fetch(`http://localhost:3000/foca/groups/${obj.id}`)
-				.then(ress=> ress.json())
-				.then( objj => divSearchResults.innerHTML = showGroupInfo(objj)
-				//showAlert sucesso
-				)})
-			.catch()
+				fetch(`http://localhost:3000/foca/groups`)
+			.then(res=>res.json())
+			.then(obj => divSearchResults.innerHTML = showAllGroupInfo(obj.groups))
+			//	alert(JSON.stringify(obj.groups))
+			.catch(err => console.log(err))})
 		}
 		
 	}

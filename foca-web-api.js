@@ -23,7 +23,7 @@ module.exports = (app) => {
     app.post('/foca/groups',insertGroup) 
 	app.get('/foca/groups/:id',getGroupById)
 	app.put('/foca/groups/:id',updateGroup)
-	app.post('/foca/copy/groups/:id', copyGroup) /** Possibilidade de criar uma cópia de um grupo existente, incluindo todas as equipas que fazem parte desse grupo. */
+	app.post('/foca/groups/:id/copy', copyGroup) /** Possibilidade de criar uma cópia de um grupo existente, incluindo todas as equipas que fazem parte desse grupo. */
     app.post('/foca/groups/:groupId/competition/:compId/team/:teamId',insertTeamInGroup)
     app.delete('/foca/groups/:groupId/team/:teamId',removeTeamInGroup)
     app.get('/foca/groups/:groupId/matches',getAllGamesBetweenTwoDates)
